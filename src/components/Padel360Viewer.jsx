@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import panImg from '../assets/Cfpadel/Super Panoramic/ok_ultimate_court_illustration.png';
+import panImg from '../assets/Cfpadel/Classic/ok_classic_court_illustration.png';
 
 export default function Padel360Viewer({ currentLang }) {
   const [activeHotspot, setActiveHotspot] = useState(null);

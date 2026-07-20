@@ -260,12 +260,12 @@ export default function ProductCatalog({ currentLang }) {
         pl: 'Kort OK Portable'
       },
       desc: {
-        en: 'Complete installation flexibility. Uses a weighted, self-supporting platform base that requires no ground anchors. Ideal for temporary events, historic sites, rooftops, or rented arenas.',
-        lt: 'Maksimalus montavimo lankstumas. Naudoja savaime išsibalansuojantį platformos pagrindą, kuriam nereikia gręžti skylių į žemę. Idealu parodoms, stogams ar nuomojamoms patalpoms.',
-        lv: 'Pilnīga uzstādīšanas elastība. Izmanto nosvērtu, pašbalstošu platformas pamatni, kurai nav nepieciešami zemes enkuri. Ideāli piemērots pagaidu pasākumiem, vēsturiskām vietām, jumtiem vai nomātām arēnām.',
-        et: 'Täielik paigalduspaindlikkus. Kasutab raskusega isekandvat platvormi alust, mis ei vaja maapinnale ankurdamist. Ideaalne ajutisteks üritusteks, ajaloolistesse kohtadesse, katustele või renditud areenidele.',
-        de: 'Komplette Installationsflexibilität. Verwendet eine dotiert gewichtete, freistehende Plattformbasis, die keine Bodenanker erfordert. Ideal für temporäre Veranstaltungen, historische Stätten, Dächer oder gemietete Arenen.',
-        pl: 'Pełna elastyczność montażu. Wykorzystuje dociążoną, samonośną podstawę platformy, która nie wymaga kotwienia do podłoża. Idealna na imprezy tymczasowe, obiekty zabytkowe, dachy lub wynajmowane hale.'
+        en: 'Self-supporting portable court built on a weighted steel base. Uses tempered safety glass and professional padel turf with zero ground anchors required. Ideal for rooftops, plazas, or historic venues.',
+        lt: 'Savaime išsibalansuojanti padelio aikštelė ant pasunkinto plieninio pagrindo su grūdintu stiklu ir profesionalia danga. Nereikalauja ankeravimo ar pamatų. Puikiai tinka stogams, aikštėms ir nuomojamoms erdvėms.',
+        lv: 'Pašbalstošs mobilais laukums uz nosvērtas tērauda platformas ar rūdītu stiklu un profesionālu zālienu. Nebrīvē nevienu zemes enkuru. Ideāli piemērots jumtiem, laukumiem vai pagaidu vietām.',
+        et: 'Isekandev teisaldatav väljak raskusega terasalusel koos karastatud turvaklaasi ja spordimuruga. Ei vaja maapinnale ankurdamist. Ideaalne katustele, väljakutele või ajutistele pindadele.',
+        de: 'Freistehender mobiler Padel-Platz auf gewichteter Stahlbasis mit gehärtetem Sicherheitsglas und Profi-Kunstrasen. Erfordert keine Bodenverankerung. Ideal für Dachterrassen, Plätze oder temporäre Veranstaltungsorte.',
+        pl: 'Samonośny mobilny kort na dociążonej podstawie stalowej z hartowanym szkłem i profesjonalną trawą. Nie wymaga kotwienia do podłoża. Idealny na dachy, place lub tereny zabytkowe.'
       },
       image: portableImg,
       specs: {
@@ -286,7 +286,7 @@ export default function ProductCatalog({ currentLang }) {
           pl: 'Szkło hartowane bezpieczne 12 mm zaprojektowane ze wzmocnionymi profilami ramowymi, certyfikowane zgodnie z EN 12150-2 (TÜV Rheinland).'
         },
         turf: { 
-          en: 'Standard monofilament curly turf, easy to remove and re-lay, designed to meet EN 15330-1 specifications.', 
+          en: 'Standard monofilament padel turf, easy to remove and re-lay, designed to meet EN 15330-1 specifications.', 
           lt: 'Standartinė garbanoto monofilamento danga, lengvai išmontuojama, atitinkanti EN 15330-1 specifikacijas.',
           lv: 'Standarta monofilamenta lokainais zāliens, viegli noņemams un ieklājams, izstrādāts atbilstoši EN 15330-1 specifikācijām.',
           et: 'Standardne kähara kiuga monofilamentmuru, lihtne eemaldada ja uuesti paigaldada, vastab EN 15330-1 nõuetele.',
@@ -360,52 +360,54 @@ export default function ProductCatalog({ currentLang }) {
     {
       id: 'movable_classic',
       name: {
-        en: 'OK Movable Court (Classic)',
-        lt: 'OK Pernešama Aikštelė',
-        lv: 'OK Pārvietojamais laukums (Classic)',
-        et: 'OK Teisaldatav väljak (Classic)',
-        de: 'OK Mobiler Classic Platz',
-        pl: 'Kort OK Movable Classic'
+        en: 'OK Movable Court (Mobile)',
+        lt: 'OK Mobilioji Aikštelė',
+        lv: 'OK Mobilais laukums',
+        et: 'OK Mobiilne väljak',
+        de: 'OK Mobiler Padel Platz',
+        pl: 'Mobilny Kort OK Padel'
       },
       desc: {
-        en: 'Movable classic court designed for quick assembly and disassembly. Perfect for temporary sports events, exhibitions, and venues where permanent ground anchoring is restricted.',
-        lt: 'Klasikinė mobili padelio aikštelė, pritaikyta greitam surinkimui ir išmontavimui. Idealiai tinka laikinoms varžyboms, mugėms ar nuomojamoms patalpoms.',
-        lv: 'Pārvietojams klasiskais laukums, kas paredzēts ātrai montāžai un demontāžai. Lieliski piemērots pagaidu sporta pasākumiem, izstādēm un vietām, kur ir ierobežota pastāvīga enkurošana.',
-        et: 'Teisaldatav klassikaline väljak kiireks paigalduseks ja lahtivõtmiseks. Ideaalne ajutisteks spordiüritusteks, näitusteks ja kohtadesse, kus alaline ankurdamine on piiratud.',
-        de: 'Mobiler Classic Platz, konzipiert für schnellen Auf- und Abbau. Perfekt für temporäre Sportveranstaltungen, Messen und Orte, an denen eine dauerhafte Bodenverankerung eingeschränkt ist.',
-        pl: 'Mobilny kort klasyczny przeznaczony do szybkiego montażu i demontażu. Idealny na tymczasowe imprezy sportowe, targi oraz obiekty, w których stałe kotwienie do podłoża jest ograniczone.'
+        en: 'Ultra-portable mobile padel court designed for rapid pop-up setup. Features impact-resistant polycarbonate panels (no glass) and interlocking synthetic sport flooring (no artificial grass or sand), requiring zero ground drilling or heavy base preparation.',
+        lt: 'Mobili padelio aikštelė, sukurta itin greitam surinkimui. Naudoja smūgiams atsparias polikarbonato plokštes (vietoj stiklo) ir modulinius sportinius kilimėlius (be dirbtinės žolės ir smėlio), todėl nereikia jokių pamatų ar gręžimo darbų.',
+        lv: 'Mobilais padela laukums ātrai uzstādīšanai. Izmanto triecienizturīgus polikarbonāta paneļus (bez stikla) un modulāru sintētisko sporta segumu (bez mākslīgā zālāja un smiltīm), neprasot urbšanu zemē vai betona pamatni.',
+        et: 'Mobiilne padeliväljak kiireks paigalduseks. Kasutab löögikindlaid polükarbonaatpaneele (mitte klaasi) ja moodulspordikatet (ilma kunstmuruta ja liivata), mis ei vaja maapinna puurimist ega betoonalust.',
+        de: 'Extrem mobiler Padel-Platz für schnelle Pop-up-Installationen. Ausgestattet mit schlagfesten Polycarbonat-Wandpanelen (kein Glas) und einem modularen Sportboden (kein Kunstrasen und kein Sand), ganz ohne Bodenbohrungen.',
+        pl: 'Mobilny kort do padla stworzony do szybkiego montażu. Wyposażony w nietłukące płyty z poliwęglanu (zamiast szkła) oraz modułową nawierzchnię sportową (bez sztucznej trawy i piasku), nie wymaga wiercenia w podłożu.'
       },
       image: movableClassicImg,
       specs: {
         frame: { 
-          en: '100x100x3mm movable steel frame structure, electrostatic powder coated, mesh panels EN 10223-5 compliant.', 
-          lt: '100x100x3mm mobili plieno konstrukcija, miltelinis dažymas, suvirintas tinklas atitinka EN 10223-5.',
-          lv: '100x100x3mm pārvietojama tērauda rāmja struktūra, pārklāta ar elektrostatisko pulveri, sieta paneļi atbilst EN 10223-5.',
-          et: '100x100x3mm teisaldatav terasraam, pulbervärvitud, keevisvõrk vastab EN 10223-5 nõuetele.',
-          de: '100x100x3mm mobile Stahlrahmenstruktur, elektrostatisch pulverbeschichtet, Gitterpaneele konform mit EN 10223-5.',
-          pl: 'Mobilna konstrukcja ze stali 100x100x3 mm, malowana proszkowo elektrostatycznie, panele siatkowe zgodne z EN 10223-5.'
+          en: 'Hot-dip galvanized Q235 steel frame with click-in modular assembly and stabilizing feet for drill-free setup.',
+          lt: 'Karštai cinkuotas Q235 plieno rėmas su greito sujungimo sistema ir stabilizavimo kojelėmis (montavimas be gręžimo).',
+          lv: 'Karsti cinkots Q235 tērauda rāmis ar ātrās savienošanas sistēmu un stabilizējošām kājām (montāža bez urbšanas).',
+          et: 'Kuumtsingitud Q235 terasraam klõpskinnituse ja stabiliseerivate jalgadega (paigaldus puurimata).',
+          de: 'Feuerverzinkter Q235-Stahlrahmen mit Klicksystem und Stabilisierungsfüßen für bohrfreie Montage.',
+          pl: 'Ocynkowana ogniowo rama ze stali Q235 z systemem modułowym i stopkami stabilizującymi (montaż bez wiercenia).'
         },
         glass: { 
-          en: '12mm tempered safety glass with heavy-duty connection fasteners, certified to EN 12150-2 (TÜV Rheinland).', 
-          lt: '12mm grūdintas saugus stiklas su tvirtomis jungtimis, sertifikuotas pagal EN 12150-2 (TÜV Rheinland).',
-          lv: '12mm rūdīts drošības stikls ar paaugstinātas izturības savienojuma stiprinājumiem, sertificēts saskaņā ar EN 12150-2 (TÜV Rheinland).',
-          et: '12mm karastatud turvaklaas tugevate ühenduskinnitustega, sertifitseeritud vastavalt EN 12150-2-le (TÜV Rheinland).',
-          de: '12mm gehärtetes Sicherheitsglas mit hochbelastbaren Verbindungsbeschlägen, zertifiziert nach EN 12150-2 (TÜV Rheinland).',
-          pl: 'Szkło hartowane bezpieczne 12 mm z wytrzymałymi łącznikami konstrukcyjnymi, certyfikowane zgodnie z EN 12150-2 (TÜV Rheinland).'
+          en: 'Lightweight Polycarbonate Sheets (No Glass): 250x stronger than glass, virtually unbreakable, pre-assembled into frame modules for fast installation.',
+          lt: 'Polikarbonato plokštės (ne stiklas): 250 k. atsparesnės smūgiams nei stiklas, nešukiškos ir iš anksto sumontuotos į rėmo modulius.',
+          lv: 'Polikarbonāta paneļi (bez stikla): 250 reizes izturīgāki par stiklu, nesaplēšami un iepriekš samontēti rāmju moduļos.',
+          et: 'Polükarbonaadist paneelid (mitte klaas): 250 korda löögikindlamad kui klaas, kerged ja raamimoodulitesse eeltulnud.',
+          de: 'Polycarbonat-Platten (kein Glas): 250-mal stoßfester als Glas, bruchsicher und für schnelle Montage im Rahmen vormontiert.',
+          pl: 'Płyty z poliwęglanu (zamiast szkła): 250-krotnie bardziej odporne na uderzenia niż szkło, nietłukące i wstępnie zmontowane w ramy.'
         },
         turf: { 
-          en: 'Standard monofilament curly turf, easy to remove and re-lay, designed to meet EN 15330-1 specifications.', 
-          lt: 'Standartinė garbanoto monofilamento danga, lengvai išmontuojama, atitinkanti EN 15330-1 specifikacijas.',
-          lv: 'Standarta monofilamenta lokainais zāliens, viegli noņemams un ieklājams, izstrādāts atbilstoši EN 15330-1 specifikācijām.',
-          et: 'Standardne kähara kiuga monofilamentmuru, lihtne eemaldada ja uuesti paigaldada, vastab EN 15330-1 nõuetele.',
-          de: 'Standardmäßig gekräuselter Monofilament-Kunstrasen, leicht zu entfernen und neu zu verlegen, konform mit EN 15330-1.',
-          pl: 'Standardowa trawa kędzierzawa monofilamentowa, łatwa do demontażu i ponownego układania, zaprojektowana zgodnie z wymogami EN 15330-1.'
+          en: 'Modular Sport Surface (No Grass): Interlocking high-density synthetic sport tiles (zero artificial grass or sand required), moisture and weather resistant.',
+          lt: 'Modulinė sporto danga (be žolės): Sintetinės sportinės plytelės (nereikia dirbtinės žolės ar smėlio), atspari drėgmei ir atmosferos poveikiui.',
+          lv: 'Modulārs sporta segums (bez zālāja): Sintētiskās sporta flīzes (nav nepieciešams mākslīgais zāliens vai smiltis), izturīgs pret mitrumu.',
+          et: 'Modulaarne spordikate (ilma muruta): Sünteetilised spordiplaadid (ei vaja kunstmuru ega liiva), niiskus- ja ilmastikukindel.',
+          de: 'Modularer Sportboden (kein Kunstrasen): Ineinandergreifende synthetische Sportfliesen (kein Kunstrasen oder Sand erforderlich), wetter- und feuchtigkeitsbeständig.',
+          pl: 'Modułowa nawierzchnia sportowa (bez trawy): Panele syntetyczne (nie wymaga sztucznej trawy ani piasku), odporna na wilgoć i warunki atmosferyczne.'
         },
         lighting: { 
-          en: '4x 400W professional LED floodlights (YXR-FL-400W), CE EMC compliant.', 
-          lt: '4x 400W profesionalūs LED šviestuvai (YXR-FL-400W), atitinkantys CE EMC direktyvas.',
-          lv: '4x 400W profesionāli LED gaismekļi (YXR-FL-400W), atbilst CE EMC.',
-          et: '4x 400W professionaalsed LED-valgustid (YXR-FL-400W), vastavad CE EMC nõuetele.'
+          en: '4x 200W/300W high-output LED floodlights (30,000+ lumens), CE EMC certified with modular plug-and-play wiring.',
+          lt: '4x 200W/300W galingi LED prožektoriai (30 000+ liumenų), CE EMC sertifikatas su moduliniais kištukiniais kabeliais.',
+          lv: '4x 200W/300W LED prožektori (30 000+ lūmeni), CE EMC sertificēti ar moduļu kabeļiem.',
+          et: '4x 200W/300W võimsad LED-prožektorid (30 000+ luumenit), CE EMC sertifikaat pistikühendusega.',
+          de: '4x 200W/300W Hochleistungs-LED-Flutlichtstrahler (30.000+ Lumen), CE-EMV-zertifiziert mit Plug-and-Play-Verkabelung.',
+          pl: '4 reflektory LED 200W/300W (30 000+ lumenów), certyfikat CE EMC z okablowaniem plug-and-play.'
         }
       }
     }
