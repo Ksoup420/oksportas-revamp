@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.oksportas.com/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oksportas.com/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://www.oksportas.com/?lang=lt" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://www.oksportas.com/?lang=lv" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://www.oksportas.com/?lang=et" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.oksportas.com/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.oksportas.com/?lang=pl" />
+  </url>
+</urlset>
