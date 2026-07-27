@@ -48,7 +48,7 @@ export default function Header({ currentLang, setCurrentLang }) {
     lt: {
       about: 'Apie mus',
       products: 'Aikštelės',
-      interactive: '360° Tūras',
+      interactive: '360° Turas',
       calculator: 'Kainos skaičiuoklė',
       projects: 'Mūsų projektai',
       faq: 'DUK',
@@ -126,19 +126,19 @@ export default function Header({ currentLang, setCurrentLang }) {
         <div className="header-actions">
           {/* Language Dropdown Selector */}
           <div className="lang-dropdown-container" ref={dropdownRef}>
-            <button 
+            <button
               className={`lang-dropdown-trigger ${dropdownOpen ? 'open' : ''}`}
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
-              <img 
-                src={`https://flagcdn.com/w20/${languages.find(l => l.code === currentLang).flag}.png`} 
-                alt={currentLang} 
+              <img
+                src={`https://flagcdn.com/w20/${languages.find(l => l.code === currentLang).flag}.png`}
+                alt={currentLang}
                 className="lang-flag"
               />
               <span className="lang-code-text">{currentLang.toUpperCase()}</span>
               <span className="dropdown-caret">▼</span>
             </button>
-            
+
             {dropdownOpen && (
               <div className="lang-dropdown-menu glass-card animate-fade-in-down">
                 {languages.map((lang) => (
@@ -150,9 +150,9 @@ export default function Header({ currentLang, setCurrentLang }) {
                       setDropdownOpen(false);
                     }}
                   >
-                    <img 
-                      src={`https://flagcdn.com/w20/${lang.flag}.png`} 
-                      alt={lang.label} 
+                    <img
+                      src={`https://flagcdn.com/w20/${lang.flag}.png`}
+                      alt={lang.label}
                       className="lang-flag"
                     />
                     <span className="lang-label-text">{lang.label}</span>
@@ -167,8 +167,8 @@ export default function Header({ currentLang, setCurrentLang }) {
           </a>
 
           {/* Mobile Menu Button */}
-          <button 
-            className={`mobile-menu-toggle ${mobileMenuOpen ? 'open' : ''}`} 
+          <button
+            className={`mobile-menu-toggle ${mobileMenuOpen ? 'open' : ''}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Menu"
           >
@@ -183,17 +183,17 @@ export default function Header({ currentLang, setCurrentLang }) {
       <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
         <nav className="mobile-menu">
           {menuItems.map((item) => (
-            <a 
-              key={item.id} 
-              href={item.id} 
-              className="mobile-nav-link" 
+            <a
+              key={item.id}
+              href={item.id}
+              className="mobile-nav-link"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}
             </a>
           ))}
-          <a 
-            href="#calculator" 
+          <a
+            href="#calculator"
             className="btn btn-primary mobile-menu-btn"
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -211,9 +211,9 @@ export default function Header({ currentLang, setCurrentLang }) {
                   setMobileMenuOpen(false);
                 }}
               >
-                <img 
-                  src={`https://flagcdn.com/w20/${lang.flag}.png`} 
-                  alt={lang.label} 
+                <img
+                  src={`https://flagcdn.com/w20/${lang.flag}.png`}
+                  alt={lang.label}
                   className="lang-flag"
                 />
                 <span>{lang.code.toUpperCase()}</span>
