@@ -192,6 +192,7 @@ export default function PadelCalculator({ currentLang }) {
               type: 'estimate',
               lang: currentLang,
               website_url: websiteUrl,
+              security_token: 'ok-sportas-2026-secure',
               ...estimateDetails
             })
           });

@@ -154,7 +154,8 @@ export default function ContactForm({ currentLang }) {
               name,
               email,
               message,
-              website_url: websiteUrl
+              website_url: websiteUrl,
+              security_token: 'ok-sportas-2026-secure'
             })
           });
           const data = await response.json();

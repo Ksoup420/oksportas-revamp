@@ -23,6 +23,13 @@ if (!empty($input['website_url'])) {
     exit;
 }
 
+// Secret token verification to prevent direct-to-endpoint API spam
+$token = isset($input['security_token']) ? $input['security_token'] : '';
+if ($token !== 'ok-sportas-2026-secure') {
+    echo json_encode(["success" => true, "message" => "Security verification passed."]);
+    exit;
+}
+
 if (!$input || empty($input['email']) || empty($input['name'])) {
     http_response_code(400);
     echo json_encode(["success" => false, "message" => "Bad Request. Missing required fields."]);
