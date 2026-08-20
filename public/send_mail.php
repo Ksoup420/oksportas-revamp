@@ -17,6 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $input = json_decode(file_get_contents('php://input'), true);
 
+// Honeypot anti-spam check
+if (!empty($input['website_url'])) {
+    echo json_encode(["success" => true, "message" => "Security verification passed."]);
+    exit;
+}
+
 if (!$input || empty($input['email']) || empty($input['name'])) {
     http_response_code(400);
     echo json_encode(["success" => false, "message" => "Bad Request. Missing required fields."]);

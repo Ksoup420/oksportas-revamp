@@ -23,6 +23,7 @@ export default function PadelCalculator({ currentLang }) {
   // Simple contact prefill state
   const [contactName, setContactName] = useState('');
   const [contactEmail, setContactEmail] = useState('');
+  const [websiteUrl, setWebsiteUrl] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   // Base prices excluding lighting (Excel-based from Kom 2026)
@@ -190,12 +191,14 @@ export default function PadelCalculator({ currentLang }) {
             body: JSON.stringify({
               type: 'estimate',
               lang: currentLang,
+              website_url: websiteUrl,
               ...estimateDetails
             })
           });
           const data = await response.json();
           if (response.ok && data.success) {
             setSubmitted(true);
+            setWebsiteUrl('');
           } else {
             alert(data.message || 'Failed to send quote request.');
           }
@@ -1110,6 +1113,16 @@ export default function PadelCalculator({ currentLang }) {
               
               {!submitted ? (
                 <form onSubmit={handleFormSubmit} className="mini-form">
+                  <div style={{ display: 'none' }}>
+                    <input 
+                      type="text" 
+                      name="website_url" 
+                      value={websiteUrl} 
+                      onChange={(e) => setWebsiteUrl(e.target.value)} 
+                      tabIndex="-1" 
+                      autoComplete="off" 
+                    />
+                  </div>
                   <input 
                     type="text" 
                     placeholder={activeT.name} 

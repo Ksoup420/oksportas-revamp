@@ -12,6 +12,7 @@ export default function ContactForm({ currentLang }) {
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [websiteUrl, setWebsiteUrl] = useState('');
 
   const t = {
     en: {
@@ -152,7 +153,8 @@ export default function ContactForm({ currentLang }) {
               lang: currentLang,
               name,
               email,
-              message
+              message,
+              website_url: websiteUrl
             })
           });
           const data = await response.json();
@@ -161,6 +163,7 @@ export default function ContactForm({ currentLang }) {
             setName('');
             setEmail('');
             setMessage('');
+            setWebsiteUrl('');
           } else {
             alert(data.message || 'Failed to send message. Please try again.');
           }
@@ -286,6 +289,16 @@ export default function ContactForm({ currentLang }) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="contact-form-element">
+                <div style={{ display: 'none' }}>
+                  <input 
+                    type="text" 
+                    name="website_url" 
+                    value={websiteUrl} 
+                    onChange={(e) => setWebsiteUrl(e.target.value)} 
+                    tabIndex="-1" 
+                    autoComplete="off" 
+                  />
+                </div>
                 <div className="form-field">
                   <input 
                     type="text" 
